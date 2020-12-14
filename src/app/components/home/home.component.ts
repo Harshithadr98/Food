@@ -13,14 +13,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  openDialog() {
-    this.dialog.open(LoginComponent,{panelClass:'custom-dialog-container'});
-    
 
+  openDialog(formType) {
+    this.dialog.open(LoginComponent, { panelClass: 'custom-dialog-container', data: { formType: formType }});
   }
-  openDialog1() {
-    this.dialog.open(LoginComponent);
 
-  }
-  
+ 
 }

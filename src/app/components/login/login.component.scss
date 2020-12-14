@@ -65,8 +65,8 @@
     }
 
     .eye {
-      position: relative;
-      margin-left: 300px;
+        right: 0px;
+        position: absolute;
       color: #858585;
       font-family: 'Open Sans', sans-serif;
       font-weight: lighter;
@@ -167,6 +167,24 @@
       color: #F67E03;
       background: none;
       cursor: pointer;
+    }
+  }
+
+  .forgot-password {
+    width: 430px;
+    height: 510px;
+    position: relative;
+
+    .back-arrow {
+      width: 17px;
+      top: 20px;
+      position: absolute;
+      left: 20px;
+    }
+
+    .icon-forgot {
+      text-align: center;
+      margin-top: 58px;
     }
   }
 }

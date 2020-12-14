@@ -28,6 +28,7 @@
     </mat-form-field>
     <div class="forgot" (click)="showFormType('forgotpassword')">
       <p>Forgot password?</p>
+
     </div>
     <button class="login-button">LOGIN</button>
     <div class="social">
@@ -38,14 +39,18 @@
       Dont have an account?<mark class="color" (click)="showFormType('register')">Get one now!</mark>
     </div>
   </div>
-  <div *ngIf="formType==='forgotpassword'">
-    FORGOT PASSWORD
+
+  <div *ngIf="formType==='forgotpassword'" class="forgot-password">
+    
+    <img class="back-arrow" src="../../../assets/Shape@2x.png" (click)="showFormType('login')">
+    <div class="icon-forgot">
+      <img src="../../../assets/icn_forgot_p_word.png">
+    </div>
   </div>
   <div *ngIf="formType==='otpverification'">
     FORGOT PASSWORD
   </div>
   <div *ngIf="formType==='register'">
     REGISTER
-</div>
-
+  </div>
 </div>
